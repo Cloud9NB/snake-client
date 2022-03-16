@@ -9,7 +9,15 @@ const connect = function () {
   conn.on("connect", () => {
     console.log('Hello!! Welcome to the Snake game!');
     conn.write('Name: Dog');
+    // conn.write('Move: up');
+    // conn.write('Move: right');
+    // conn.write('Move: down');
+    // conn.write('Move: left');
   });
+
+
+
+
 
   conn.on('data', (data) => {
     console.log(data);
